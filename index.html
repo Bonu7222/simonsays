@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Simon Says</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-grid"></div>
+
+    <div class="game-container">
+        <header class="header">
+            <h1 class="logo">SIMON<span>_</span>CYBER</h1>
+            <div class="scores">
+                <div class="score-box">
+                    <span class="label">SCORE</span>
+                    <span class="value" id="score">0</span>
+                </div>
+                <div class="score-box">
+                    <span class="label">HIGH</span>
+                    <span class="value" id="high-score">0</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="board-container">
+            <div class="simon-board">
+                <div class="pad green" data-color="green"></div>
+                <div class="pad red" data-color="red"></div>
+                <div class="pad yellow" data-color="yellow"></div>
+                <div class="pad blue" data-color="blue"></div>
+
+                <div class="center-circle">
+                    <button id="start-btn" class="start-btn">START</button>
+                    <h2 id="status-text" class="status-text hidden">WATCH</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-hint">Press the colors in the same order</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
